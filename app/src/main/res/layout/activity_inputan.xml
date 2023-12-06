@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inputan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="174dp"
+        android:text="@string/inputan" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Masukan Nama"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/umur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama"
+        android:hint="Masukan umur"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/tinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukan Tinggi"
+        android:layout_below="@id/umur"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/berat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tinggi"
+        android:hint="Masukan Berat"
+        android:inputType="numberDecimal"/>
+
+
+    <Spinner
+        android:id="@+id/kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_below="@id/berat"
+        android:entries="@array/gender"
+        android:hint="Masukan Berat" />
+
+    <Button
+        android:id="@+id/btn_sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kelamin"
+        android:text="Submit"/>
+</RelativeLayout>
